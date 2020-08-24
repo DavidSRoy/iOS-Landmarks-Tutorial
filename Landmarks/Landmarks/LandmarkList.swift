@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    @State var showFavoritesOnly = false;
+    
     var body: some View {
         NavigationView {
             List(landmarkData) { landmark in
